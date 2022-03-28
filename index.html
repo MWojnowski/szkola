@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systemy</title>
+    <style>
+        body
+        {
+            background-color: blueviolet;
+            
+        }
+        #naglowek1,#naglowek2,#naglowek3
+        {
+             color:chartreuse;
+        }
+        button
+        {
+            background-color: crimson;
+            font-size: larger;
+        }
+        hr
+        {
+            height: 40px;
+           background-color: darkmagenta  ;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="naglowek1">Kalkulator sytemów liczbowych</h1><hr id="jeden">
+
+    <button onclick="Jasny()" id="b1">Motyw jasny</button>
+    <button onclick="Ciemny()"id="b2">Motyw Ciemny</button>
+    <button onclick="Standardowy()" id="b3">Motyw Standardowy</button>
+
+    <script src="Main.js"></script>
+
+    <h2 id="naglowek2"><p>Przelicz z systemu dziesiętnego na wybrany: </p></h2>
+
+    <input type="text" placeholder="System Dziesiętny" name="dziesietny" id="dziesisentny">
+    <input list="systemy" id="systemyliczbowe">
+    <datalist id="systemy">
+        <option value="Binarny"></option>
+        <option value="Szesnastkowy"></option>
+        <option value="Ósemkowy"></option>
+        <option value="Siódemkowy"></option>
+        <option value="Trójkowy"></option>
+        <option value="Czwórkowy"></option>
+        <option value="Piatkowy"></option>
+    </datalist>
+    <Button onclick="Oblicz()" id="b4">Przelicz</Button>
+    <input type="text" placeholder="wynik" id="wynik" readonly>
+
+    <h2 id="naglowek3">Przelicz z wybranego systemu na dziesiętny:</h2>
+
+    <input type="text" placeholder="Liczba w wybranym systiemie" id="wybranysystem">
+    <input list="systemy2" id="systemyliczbowe2">
+    <datalist id="systemy2">
+        <option value="Binarny"></option>
+        <option value="Szesnastkowy"></option>
+        <option value="Ósemkowy"></option>
+        <option value="Siódemkowy"></option>
+        <option value="Trójkowy"></option>
+        <option value="Czwórkowy"></option>
+        <option value="Piatkowy"></option>
+    </datalist>
+    <button id="b5" onclick="Na_Dziesietny()">Przelicz</button>
+    <input type="text" placeholder="wynik" id="wynik2" readonly>
+
+</body>
+</html>
